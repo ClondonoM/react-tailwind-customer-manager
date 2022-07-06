@@ -18,8 +18,22 @@ const FormCustomer = () => {
         .integer('Invalid Phone Number')
         .typeError('Invalid Phone Number'),
     });
-  const handleSubmit = (values) => {
-    console.log(values);
+  const handleSubmit = async (values) => {
+    try {
+      const url = 'http://localhost:4000/customers';
+      const response = await fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(values),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      console.log(response);
+      const result = await response.json();
+      console.log(result);
+    } catch (err) {
+      console.log(err);
+    }
   };
   return (
     <div className='bg-white mt-10 px-5 py-10 rounded-md shadow-md md:w-3/4 mx-auto'>

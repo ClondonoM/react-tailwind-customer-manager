@@ -1,5 +1,12 @@
 {
-  "customers":[
-    
+  "customers": [
+    {
+      "name": "Carlos Londono",
+      "company": "CALM",
+      "email": "carlos_alm@yahoo.com",
+      "phone": "3108746350",
+      "notes": "el cliente necesita un producto",
+      "id": 1
+    }
   ]
 }
