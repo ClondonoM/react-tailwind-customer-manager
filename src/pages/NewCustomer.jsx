@@ -1,5 +1,13 @@
+import FormCustomer from '../components/FormCustomer';
+
 const NewCustomer = () => {
-  return <div>From New Customer</div>;
+  return (
+    <>
+      <h1 className='font-black text-4xl text-blue-900'>New Customer</h1>
+      <p className='mt-3'>Fill in the following fields to register a client</p>
+      <FormCustomer />
+    </>
+  );
 };
 
 export default NewCustomer;
