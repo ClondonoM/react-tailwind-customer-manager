@@ -4,6 +4,7 @@ import Layout from './layout/Layout';
 import Home from './pages/Home';
 import NewCustomer from './pages/NewCustomer';
 import EditCustomer from './pages/EditCustomer';
+import ViewCustomer from './pages/ViewCustomer';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path='new' element={<NewCustomer />} />
-          <Route path='edit/:id' element={<EditCustomer />} />
+          <Route path='edit:id' element={<EditCustomer />} />
+          <Route path=':id' element={<ViewCustomer />} />
         </Route>
       </Routes>
     </BrowserRouter>
