@@ -7,6 +7,30 @@
       "phone": "3108746350",
       "notes": "el cliente necesita un producto",
       "id": 1
+    },
+    {
+      "name": "mauro",
+      "company": "mauro comp",
+      "email": "Maurolonmartin@hotmail.com",
+      "phone": "45788167",
+      "notes": "mauro me ayuda",
+      "id": 2
+    },
+    {
+      "name": "tomas",
+      "company": "tomix gamer",
+      "email": "tomas@gmail.com",
+      "phone": "0101010101",
+      "notes": "tomas quiere jugar xbox",
+      "id": 3
+    },
+    {
+      "name": "alejo",
+      "company": "mirringa",
+      "email": "alejo@gmail.com",
+      "phone": "3121212",
+      "notes": "hace juegos para gatos",
+      "id": 4
     }
   ]
 }
