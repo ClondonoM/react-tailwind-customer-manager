@@ -9,7 +9,7 @@
       "id": 1
     },
     {
-      "name": "mauro",
+      "name": "Mauricio Londono",
       "company": "mauro comp",
       "email": "Maurolonmartin@hotmail.com",
       "phone": "45788167",
@@ -37,8 +37,16 @@
       "company": "cuenta cuentos",
       "email": "gato@gmail.com",
       "phone": "123123",
-      "notes": "",
+      "notes": "cuenta muchos cuentos",
       "id": 5
+    },
+    {
+      "name": "Isabela Londono",
+      "company": "princes",
+      "email": "isa@gmail.com",
+      "phone": "",
+      "notes": "es la pequeña y es hermosa",
+      "id": 6
     }
   ]
 }
