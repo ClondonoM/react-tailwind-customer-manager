@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './layout/Layout';
 import Home from './pages/Home';
@@ -13,7 +12,7 @@ function App() {
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
           <Route path='new' element={<NewCustomer />} />
-          <Route path='edit:id' element={<EditCustomer />} />
+          <Route path='edit/:id' element={<EditCustomer />} />
           <Route path=':id' element={<ViewCustomer />} />
         </Route>
       </Routes>

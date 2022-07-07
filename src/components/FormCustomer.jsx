@@ -2,8 +2,10 @@ import { Formik, Form, Field } from 'formik';
 import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 import Alert from './Alert';
+import Spinner from './Spinner';
 
-const FormCustomer = () => {
+const FormCustomer = ({ customer, loading }) => {
+  const { name, company, email, phone, notes } = customer;
   const navigate = useNavigate();
   const newCustomerSchema = () =>
     Yup.object().shape({
@@ -38,19 +40,22 @@ const FormCustomer = () => {
       console.log(err);
     }
   };
-  return (
+  return loading ? (
+    <Spinner />
+  ) : (
     <div className='bg-white mt-10 px-5 py-10 rounded-md shadow-md md:w-3/4 mx-auto'>
       <h1 className='text-gray-600 font-bold text-xl uppercase text-center'>
-        Add Customer
+        {customer.id ? 'Edit Customer' : 'New Customer'}
       </h1>
       <Formik
         initialValues={{
-          name: '',
-          company: '',
-          email: '',
-          phone: '',
-          notes: '',
+          name: name,
+          company: company,
+          email: email,
+          phone: phone,
+          notes: notes,
         }}
+        enableReinitialize={true}
         onSubmit={async (values, { resetForm }) => {
           await handleSubmit(values);
           resetForm();
@@ -135,7 +140,7 @@ const FormCustomer = () => {
               </div>
               <input
                 type='submit'
-                value='Add Customer'
+                value={customer.id ? 'Edit Customer' : 'Add Customer'}
                 className='mt-5 w-full bg-blue-800 p-3 text-white text-lg rounded-md uppercase cursor-pointer'
               />
             </Form>
@@ -144,6 +149,11 @@ const FormCustomer = () => {
       </Formik>
     </div>
   );
+};
+
+FormCustomer.defaultProps = {
+  customer: {},
+  loading: false,
 };
 
 export default FormCustomer;

@@ -16,9 +16,8 @@ const ViewCustomer = () => {
       } catch (err) {
         console.log(error);
       }
-      setTimeout(() => {
-        setLoading(!loading);
-      }, 1000);
+
+      setLoading(!loading);
     };
     getCustomerAPI();
   }, []);
