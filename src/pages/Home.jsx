@@ -17,6 +17,27 @@ const Home = () => {
     getCustomerAPI();
   }, []);
 
+  const handleDelete = async (id) => {
+    const confirmDelete = confirm(
+      'Are you sure you want to delete this customer?'
+    );
+    if (confirmDelete) {
+      try {
+        const url = `http://localhost:4000/customers/${id}`;
+        const response = await fetch(url, {
+          method: 'DELETE',
+        });
+        await response.json();
+        const arrayCustomers = customers.filter(
+          (customer) => customer.id !== id
+        );
+        setCustomers(arrayCustomers);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+  };
+
   return (
     <>
       <h1 className='font-black text-4xl text-blue-900'>Customers</h1>
@@ -32,7 +53,11 @@ const Home = () => {
         </thead>
         <tbody>
           {customers.map((customer) => (
-            <Customer key={customer.id} customer={customer} />
+            <Customer
+              key={customer.id}
+              customer={customer}
+              handleDelete={handleDelete}
+            />
           ))}
         </tbody>
       </table>

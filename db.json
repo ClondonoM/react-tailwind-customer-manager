@@ -1,14 +1,6 @@
 {
   "customers": [
     {
-      "name": "Carlos Londono",
-      "company": "CALM",
-      "email": "carlos_alm@yahoo.com",
-      "phone": "3108746350",
-      "notes": "el cliente necesita un producto",
-      "id": 1
-    },
-    {
       "name": "Mauricio Londono",
       "company": "mauro comp",
       "email": "Maurolonmartin@hotmail.com",
@@ -17,36 +9,20 @@
       "id": 2
     },
     {
-      "name": "tomas",
-      "company": "tomix gamer",
-      "email": "tomas@gmail.com",
-      "phone": "0101010101",
-      "notes": "tomas quiere jugar xbox",
-      "id": 3
-    },
-    {
-      "name": "alejo",
-      "company": "mirringa",
-      "email": "alejo@gmail.com",
-      "phone": "3121212",
-      "notes": "hace juegos para gatos",
-      "id": 4
-    },
-    {
-      "name": "gato con botas",
-      "company": "cuenta cuentos",
-      "email": "gato@gmail.com",
-      "phone": "123123",
-      "notes": "cuenta muchos cuentos",
-      "id": 5
-    },
-    {
       "name": "Isabela Londono",
       "company": "princes",
       "email": "isa@gmail.com",
       "phone": "",
       "notes": "es la pequeña y es hermosa",
       "id": 6
+    },
+    {
+      "name": "Carlos Londono",
+      "company": "Carlos Londono",
+      "email": "carlos_alm@yahoo.com",
+      "phone": "3108746350",
+      "notes": "aprendiendo react",
+      "id": 7
     }
   ]
 }
