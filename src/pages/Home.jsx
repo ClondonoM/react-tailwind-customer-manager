@@ -6,7 +6,8 @@ const Home = () => {
   useEffect(() => {
     const getCustomerAPI = async () => {
       try {
-        const url = 'http://localhost:4000/customers';
+        const url =
+          'https://my-json-server.typicode.com/ClondonoM/react-tailwind-customer-manager/customers';
         const response = await fetch(url);
         const result = await response.json();
         setCustomers(result);
