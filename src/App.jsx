@@ -6,7 +6,6 @@ import EditCustomer from './pages/EditCustomer';
 import ViewCustomer from './pages/ViewCustomer';
 
 function App() {
-  console.log(import.meta.env);
   return (
     <BrowserRouter>
       <Routes>

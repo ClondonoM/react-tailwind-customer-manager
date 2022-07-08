@@ -6,8 +6,7 @@ const Home = () => {
   useEffect(() => {
     const getCustomerAPI = async () => {
       try {
-        const url =
-          'https://my-json-server.typicode.com/ClondonoM/react-tailwind-customer-manager/customers';
+        const url = import.meta.env.VITE_API_URL;
         const response = await fetch(url);
         const result = await response.json();
         setCustomers(result);
@@ -24,7 +23,7 @@ const Home = () => {
     );
     if (confirmDelete) {
       try {
-        const url = `http://localhost:4000/customers/${id}`;
+        const url = import.meta.env.VITE_API_URL;
         const response = await fetch(url, {
           method: 'DELETE',
         });
