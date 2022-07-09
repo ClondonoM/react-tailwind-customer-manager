@@ -152,7 +152,7 @@ const FormCustomer = ({ customer, loading }) => {
               </div>
               <input
                 type='submit'
-                value={customer.id ? 'Edit Customer' : 'Add Customer'}
+                value={customer.id ? 'Save Changes' : 'Add Customer'}
                 className='mt-5 w-full bg-blue-800 p-3 text-white text-lg rounded-md uppercase cursor-pointer'
               />
             </Form>

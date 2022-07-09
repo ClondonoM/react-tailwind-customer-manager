@@ -7,9 +7,18 @@ const Layout = () => {
   return (
     <div className='md:flex md:min-h-screen'>
       <div className='md:w-1/4 bg-blue-900 px-5 py-10'>
-        <h2 className='text-4xl font-black text-center text-white'>
-          CRM - Customers
+        <h2 className='text-4xl font-black text-center text-white mb-5'>
+          Customers Manager App
         </h2>
+        <div className='no-underline text-lg text-white text-center hover:text-blue-300'>
+          <a
+            href='https://carlos-londono.dev/'
+            target='_blank'
+            rel='noreferrer'
+          >
+            by <span className='font-bold'>carlos-londono.dev</span>
+          </a>
+        </div>
         <nav className='mt-10 '>
           <Link
             className={`${
