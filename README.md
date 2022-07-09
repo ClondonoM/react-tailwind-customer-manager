@@ -4,6 +4,7 @@
 
 Customers Manager App allows you to store, review, edit or delete customer data stored in an API.
 The application was made with react, the routes were established with react-router, the forms were created with Formik and the validation was done with Yup. The styles were applied with tailwindcss.
+The data is stored in https://my-json-server.typicode.com/ so the changes are faked and aren't persisted.
 
 ## Getting Started with Vite React App
 
@@ -21,7 +22,7 @@ In the project directory, you can run:
 npm run dev
 ```
 
-for development local JSON server open a new terminal and use
+For development local JSON server, open a new terminal and use
 
 ```
 json-server --watch db.json --port 4000
@@ -33,4 +34,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-This application is deployed in:
+This application is deployed in: https://customer-manager-app.netlify.app/
